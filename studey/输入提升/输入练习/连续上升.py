@@ -5,13 +5,13 @@ write = lambda x : sys.stdout.write(str(x)+"\n")
 temps = list(map(int,input().split()))
 n=len(temps)
 res=[]
-a=0
+a=1
 for i in range(n-1):
     if temps[i+1]>temps[i]:
         a+=1
     else:
         res.append(a)
-        a=0
+        a=1
 res.append(a)
 result = max(res)
 write(result) 
