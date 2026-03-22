@@ -1,0 +1,18 @@
+{
+    // 禁用语言服务器，这是最彻底的“断网”操作
+    "python.languageServer": "None",
+
+    // 依然关闭基本的编辑器自动建议
+    "editor.quickSuggestions": {
+        "other": "off",
+        "comments": "off",
+        "strings": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.parameterHints.enabled": false,
+    "editor.wordBasedSuggestions": "off",
+
+    // Linux 习惯：禁止自动保存括号
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never"
+}
