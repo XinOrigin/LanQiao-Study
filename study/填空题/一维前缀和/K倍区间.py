@@ -12,7 +12,7 @@ for i in range(1,n+1):
     for j in range(1,n+1):
         if s[j]-s[i-1]  % k ==0 :
             ans+=1
-print(k)
+print(ans)
 
 #o(n)
 import sys
@@ -29,3 +29,20 @@ for i in range(1,n+1):
     ans += cnt[s]
     cnt[s] +=1
 print(ans)
+
+
+import sys
+input = lambda: sys.stdin.readline().strip()
+def qwe():
+    n,k = map(int,input().split())
+    cnt = [0]*k
+    cnt[0] = 1
+    s=0
+    ans=0
+    for _ in range(n):
+        val = int(input())
+        s = (s+val) %k
+        ans += cnt[s]
+        cnt[s] +=1
+    print(ans)
+qwe()
